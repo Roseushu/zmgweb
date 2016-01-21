@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>自贸购</title>
+<meta name="keywords" content="自贸购">
+<meta name="description" content="自贸购，自游购，世界那么大，我们去看看">
+<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+<div id="fullpage">
+	<div class="header">
+    	<div class="headerWrap">
+            <a href="#" class="logo"></a>
+            <a href="#firstPage" class="download"></a>
+        </div>
+    </div>
+	<div class="section" id="section1">
+		<div class="wrap">
+			<div class="content">
+            	<div class="left">
+                	<div class="logo"></div>
+                    <div class="text"></div>
+                    <div class="download">
+                    	<a href="#" class="ios"></a>
+                    	<a href="img/zmg_1.0.apk" class="android"></a>
+                    </div>
+                </div>
+                <div class="right">
+                	<div class="img"></div>
+                </div>
+            </div>
+            <span class="bottomArrow"></span>
+		</div>
+	</div>
+	<div class="section" id="section2">
+		<div class="wrap">
+			<div class="content">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <span class="bottomArrow"></span>
+        </div>
+	</div>
+	<div class="section" id="section3">
+		<div class="wrap">
+			<div class="content">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <span class="bottomArrow"></span>
+		</div>
+	</div>
+	<div class="section" id="section4">
+		<div class="wrap">
+			<div class="content">
+				<div class="title"></div>
+                <div class="text">
+                    <p>自贸购是设立在中国天津自由贸易区空港片区内的首家跨境电商平台，以境外直供、全场直营、本土服务、境内维保模式为用户提供优质的海外正品以及后续服务。</p>
+                    <p>自贸购所有商品均由直营品牌商、代理商、厂商直供，在韩国、日本、英国、香港等地自建仓库，通过航空包机高效送达，并经过了海关、检验检疫部门的全程监管和备案，为广大消费者创造一个便捷的跨境网购体验。同时平台中还通过视频方式更直观的展现商品特点，在社区中用户可以分享自己在海外游玩、购物的点点滴滴，让用户轻松淘遍全球海外精品，省心、放心、开心！</p>
+                </div>
+				<div class="contact">
+                	<p>客服热线：022-27963101</p>
+                    <!--<a href="#" class="weixin"></a>
+                    <a href="#" class="weibo"></a>
+                    <a href="#" class="qq"></a>-->
+                </div>
+            </div>
+		</div>
+        <div class="bottom">
+            <a href="#"></a>
+            <span>地址：天津市南开区红旗南路苏高科技大厦14层</span>
+            <span>自贸购（天津）网络科技有限公司</span>
+        	<span>copyright&copy;2016 津ICP备1029201号</span>
+        </div>
+	</div>
+</div>
+<!--[if IE]>
+    <script type="text/javascript">
+         var console = { log: function() {} };
+    </script>
+<![endif]-->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#fullpage').fullpage({
+			css3:false,
+            navigation: true,
+            navigationPosition: 'right',
+			anchors: ['firstPage', 'secondPage', '3rdPage', 'lastPage'],
+			afterLoad: function(anchorLink, index){
+
+				//section 2
+				if(index == 2){
+					//moving the image
+					$('#section2').find('.left').delay(50).animate({
+						opacity:'1',
+						top: '0%'
+					}, 1500, 'easeOutExpo');
+					$('#section2').find('.right').delay(50).animate({
+						opacity:'1',
+						bottom: '0%'
+					}, 1500, 'easeOutExpo');
+				}
+				//section 3
+				if(index == 3){
+					//moving the image
+					$('#section3').find('.left').delay(50).animate({
+						opacity:'1',
+						top: '0%'
+					}, 1500, 'easeOutExpo');
+					$('#section3').find('.right').delay(50).animate({
+						opacity:'1',
+						bottom: '0%'
+					}, 1500, 'easeOutExpo');
+				}
+				//section 4
+				if(index == 4){
+					//moving the image
+					$('#section4').find('.title,.text').delay(50).animate({
+						opacity:'1',
+						left: '0%'
+					}, 1500, 'easeOutExpo');
+					$('#section4').find('.contact').delay(50).animate({
+						opacity:'1',
+						right: '0%'
+					}, 1500, 'easeOutExpo');
+				}
+			}
+        });
+    });
+</script>
+</body></html>
