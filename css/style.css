@@ -37,7 +37,7 @@ html{overflow:-moz-scrollbars-vertical;zoom:expression(function(ele){ele.style.z
 .right{float:right;}
 #section1 .logo{margin-left:43px; width:329px; height:101px; background:url(../img/page1_logo.png);}
 #section1 .text{margin-top:51px; width:485px; height:114px; background:url(../img/page1_text.png);}
-#section1 .download{margin:41px 0 0 48px; width:180px; height:163px; background:url(../img/page1_code.png) no-repeat; padding-left:202px;}
+#section1 .download{margin:41px 0 0 48px; width:180px; height:163px; background:url(../img/page1_code.png) no-repeat; background-size:154px; padding-left:202px;}
 #section1 a{display:inline-block; width:180px; height:58px;}
 #section1 .ios{background:url(../img/page1_ios.png); margin-top:7px;}
 #section1 .android{background:url(../img/page1_android.png); margin-top:27px;}
